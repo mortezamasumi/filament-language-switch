@@ -36,12 +36,12 @@
     },
     "autoload": {
         "psr-4": {
-            "BezhanSalleh\\FilamentLanguageSwitch\\": "src"
+            "Mortezamasumi\\FilamentLanguageSwitch\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "BezhanSalleh\\FilamentLanguageSwitch\\Tests\\": "tests"
+            "Mortezamasumi\\FilamentLanguageSwitch\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -57,7 +57,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "BezhanSalleh\\FilamentLanguageSwitch\\FilamentLanguageSwitchServiceProvider"
+                "Mortezamasumi\\FilamentLanguageSwitch\\FilamentLanguageSwitchServiceProvider"
             ]
         }
     },
