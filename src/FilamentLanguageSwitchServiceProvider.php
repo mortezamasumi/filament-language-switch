@@ -1,9 +1,9 @@
 <?php
 
-namespace BezhanSalleh\FilamentLanguageSwitch;
+namespace Mortezamasumi\FilamentLanguageSwitch;
 
-use BezhanSalleh\FilamentLanguageSwitch\Http\Livewire\FilamentLanguageSwitch;
-use BezhanSalleh\FilamentLanguageSwitch\Http\Middleware\SwitchLanguageLocale;
+use Mortezamasumi\FilamentLanguageSwitch\Http\Livewire\FilamentLanguageSwitch;
+use Mortezamasumi\FilamentLanguageSwitch\Http\Middleware\SwitchLanguageLocale;
 use Filament\Facades\Filament;
 use Filament\Http\Middleware\DispatchServingFilamentEvent;
 use Filament\Panel;

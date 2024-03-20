@@ -1,15 +1,15 @@
 @php
-    $languageSwitch = \BezhanSalleh\FilamentLanguageSwitch\LanguageSwitch::make();
+    $languageSwitch = \Mortezamasumi\FilamentLanguageSwitch\LanguageSwitch::make();
     $locales = $languageSwitch->getLocales();
     $isCircular = $languageSwitch->isCircular();
     $isFlagsOnly = $languageSwitch->isFlagsOnly();
     $hasFlags = filled($languageSwitch->getFlags());
     $isVisibleOutsidePanels = $languageSwitch->isVisibleOutsidePanels();
     $outsidePanelsPlacement = $languageSwitch->getOutsidePanelPlacement()->value;
-    $placement = match(true){
+    $placement = match (true) {
         $outsidePanelsPlacement === 'top-center' && $isFlagsOnly => 'bottom',
         $outsidePanelsPlacement === 'bottom-center' && $isFlagsOnly => 'top',
-        ! $isVisibleOutsidePanels && $isFlagsOnly=> 'bottom',
+        !$isVisibleOutsidePanels && $isFlagsOnly => 'bottom',
         default => 'bottom-end',
     };
 @endphp

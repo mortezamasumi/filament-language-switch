@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace BezhanSalleh\FilamentLanguageSwitch;
+namespace Mortezamasumi\FilamentLanguageSwitch;
 
-use BezhanSalleh\FilamentLanguageSwitch\Enums\Placement;
+use Mortezamasumi\FilamentLanguageSwitch\Enums\Placement;
 use Closure;
 use Exception;
 use Filament\Panel;
@@ -173,7 +173,7 @@ class LanguageSwitch extends Component
         $flagUrls = (array) $this->evaluate($this->flags);
 
         foreach ($flagUrls as $url) {
-            if (! filter_var($url, FILTER_VALIDATE_URL)) {
+            if (!filter_var($url, FILTER_VALIDATE_URL)) {
                 throw new \Exception('Invalid flag url');
                 exit;
             }

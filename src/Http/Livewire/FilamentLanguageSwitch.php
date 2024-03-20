@@ -1,8 +1,8 @@
 <?php
 
-namespace BezhanSalleh\FilamentLanguageSwitch\Http\Livewire;
+namespace Mortezamasumi\FilamentLanguageSwitch\Http\Livewire;
 
-use BezhanSalleh\FilamentLanguageSwitch\Events\LocaleChanged;
+use Mortezamasumi\FilamentLanguageSwitch\Events\LocaleChanged;
 use Illuminate\Contracts\View\View;
 use Livewire\Component;
 
@@ -19,7 +19,6 @@ class FilamentLanguageSwitch extends Component
         event(new LocaleChanged($locale));
 
         $this->redirect(request()->header('Referer'));
-
     }
 
     public function render(): View

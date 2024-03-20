@@ -2,7 +2,7 @@
 
 namespace BezhanSalleh\FilamentLanguageSwitch\Tests;
 
-use BezhanSalleh\FilamentLanguageSwitch\FilamentLanguageSwitchServiceProvider;
+use Mortezamasumi\FilamentLanguageSwitch\FilamentLanguageSwitchServiceProvider;
 use Filament\FilamentServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Livewire\LivewireServiceProvider;
@@ -15,7 +15,7 @@ class TestCase extends Orchestra
         parent::setUp();
 
         Factory::guessFactoryNamesUsing(
-            fn (string $modelName) => 'BezhanSalleh\\FilamentLanguageSwitch\\Database\\Factories\\' . class_basename($modelName) . 'Factory'
+            fn (string $modelName) => 'Mortezamasumi\\FilamentLanguageSwitch\\Database\\Factories\\' . class_basename($modelName) . 'Factory'
         );
     }
 

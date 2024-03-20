@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace BezhanSalleh\FilamentLanguageSwitch\Enums;
+namespace Mortezamasumi\FilamentLanguageSwitch\Enums;
 
 enum Placement: string
 {
