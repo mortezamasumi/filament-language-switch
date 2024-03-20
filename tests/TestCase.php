@@ -1,6 +1,6 @@
 <?php
 
-namespace BezhanSalleh\FilamentLanguageSwitch\Tests;
+namespace Mortezamasumi\FilamentLanguageSwitch\Tests;
 
 use Mortezamasumi\FilamentLanguageSwitch\FilamentLanguageSwitchServiceProvider;
 use Filament\FilamentServiceProvider;

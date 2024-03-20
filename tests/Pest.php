@@ -1,5 +1,5 @@
 <?php
 
-use BezhanSalleh\FilamentLanguageSwitch\Tests\TestCase;
+use Mortezamasumi\FilamentLanguageSwitch\Tests\TestCase;
 
 uses(TestCase::class)->in(__DIR__);
