@@ -2,9 +2,9 @@
 
 namespace Mortezamasumi\FilamentLanguageSwitch\Http\Middleware;
 
-use Mortezamasumi\FilamentLanguageSwitch\LanguageSwitch;
 use Closure;
 use Illuminate\Http\Request;
+use Mortezamasumi\FilamentLanguageSwitch\LanguageSwitch;
 
 class SwitchLanguageLocale
 {
@@ -13,7 +13,7 @@ class SwitchLanguageLocale
         $locale = session()->get('locale')
             ?? $request->get('locale')
             ?? $request->cookie('filament_language_switch_locale')
-            ?? $this->getBrowserLocale($request)
+            // ?? $this->getBrowserLocale($request)
             ?? config('app.locale', 'en');
 
         if (in_array($locale, LanguageSwitch::make()->getLocales())) {
