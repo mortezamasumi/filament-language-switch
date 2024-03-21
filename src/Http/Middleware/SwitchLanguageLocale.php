@@ -16,7 +16,7 @@ class SwitchLanguageLocale
             // ?? $this->getBrowserLocale($request)
             ?? config('app.locale', 'en');
 
-        if (in_array($locale, LanguageSwitch::make()->getLocales())) {
+        if ($locale !== app()->getLocale() && in_array($locale, LanguageSwitch::make()->getLocales())) {
             app()->setLocale($locale);
         }
 

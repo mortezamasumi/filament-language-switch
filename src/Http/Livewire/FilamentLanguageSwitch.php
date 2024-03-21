@@ -2,9 +2,9 @@
 
 namespace Mortezamasumi\FilamentLanguageSwitch\Http\Livewire;
 
-use Mortezamasumi\FilamentLanguageSwitch\Events\LocaleChanged;
 use Illuminate\Contracts\View\View;
 use Livewire\Component;
+use Mortezamasumi\FilamentLanguageSwitch\Events\LocaleChanged;
 
 class FilamentLanguageSwitch extends Component
 {
